@@ -1,7 +1,7 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import NewArrivals from "./components/NewArrivals";
-import Project from "./components/Project";
+import Header from "./components/sections/Header";
+import Navbar from "./components/sections/Navbar";
+import NewArrivals from "./components/sections/NewArrivals";
+import Project from "./components/sections/Project";
 
 function App() {
   return (
