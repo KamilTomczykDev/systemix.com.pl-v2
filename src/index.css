@@ -15,4 +15,7 @@
   li {
     @apply text-grey-secondary cursor-pointer hover:text-stone-400;
   }
+  .newarrival-image {
+    @apply w-[75%];
+  }
 }

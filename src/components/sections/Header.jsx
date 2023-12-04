@@ -1,6 +1,6 @@
-import BgImage from "../../assets/slider6.jpg";
-import EuImage from "../../assets/znak-eu-white.png";
-import EuImage2 from "../../assets/znak-eu-white-2.png";
+import BgImage from "../../assets/img/slider6.jpg";
+import EuImage from "../../assets/img/znak-eu-white.png";
+import EuImage2 from "../../assets/img/znak-eu-white-2.png";
 // import LogoRP from "../assets/logoRP.png";
 
 function Header() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import Logo from "../../assets/systemix-logo.png";
+import Logo from "../../assets/img/systemix-logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -9,7 +9,7 @@ function Navbar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="fixed z-20 flex h-[60px] w-full items-center justify-center bg-white md:h-[80px]">
+    <nav className="fixed z-20 flex h-[60px] w-full items-center justify-center border-b-[1px] bg-white md:h-[80px]">
       <div className="flex w-full max-w-[1300px] items-center justify-between px-5 text-lg">
         <img
           src={Logo}

@@ -1,10 +1,11 @@
-import EuImage from "../../assets/EUsign.png";
-import EuImage2 from "../../assets/EUsign_2.png";
-import LogoRP from "../../assets/logoRP.png";
 import BodyText from "../ui/BodyText";
 import Section from "../ui/Section";
 import SectionTitle from "../ui/SectionTitle";
 import TextHighlight from "../ui/TextHighlight";
+
+import EuImage from "../../assets/img/EUsign.png";
+import EuImage2 from "../../assets/img/EUsign_2.png";
+import LogoRP from "../../assets/img/logoRP.png";
 
 function Project() {
   return (

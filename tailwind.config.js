@@ -5,11 +5,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'new-arrivals' : "url('../src/assets/img/new-arrivals.jpg')",
+        'we-take-care' : `url("/src/assets/img/we-take-care.jpg")`,
+      },
       fontFamily: {
         'fugaz': 'Fugaz One, sans-serif',
       },
       gridTemplateRows: {
-        'product': "25px 2fr 1fr",
+        'product': "40px 2fr 1fr",
       },
       colors: {
         "brand-green": "#044424",
