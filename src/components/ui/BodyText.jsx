@@ -1,6 +1,6 @@
 function BodyText({ children }) {
   return (
-    <p className="4xl:max-w-[800px] 4xl:text-3xl max-w-[600px] lg:text-xl">
+    <p className="max-w-[600px] lg:text-xl 4xl:max-w-[800px] 4xl:text-2xl 4xl:tracking-tight">
       {children}
     </p>
   );

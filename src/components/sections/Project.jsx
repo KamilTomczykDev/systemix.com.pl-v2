@@ -7,11 +7,16 @@ import EuImage from "../../assets/img/EUsign.png";
 import EuImage2 from "../../assets/img/EUsign_2.png";
 import LogoRP from "../../assets/img/logoRP.png";
 
+import { FaPencil } from "react-icons/fa6";
+
 function Project() {
   return (
     <Section>
       <div className="flex w-full max-w-[1000px] flex-col justify-center gap-8 px-4 text-left sm:items-center sm:text-center">
-        <SectionTitle>Projekt unijny</SectionTitle>
+        <SectionTitle>
+          <FaPencil />
+          Projekt unijny
+        </SectionTitle>
         <div className="grid w-full max-w-[600px] grid-cols-3 items-center xl:w-[50%]">
           <img src={EuImage2} className="w-full" />
           <img src={LogoRP} className="w-full" />

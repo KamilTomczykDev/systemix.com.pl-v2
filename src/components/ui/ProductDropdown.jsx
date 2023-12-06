@@ -8,7 +8,7 @@ function ProductDropdown({ title, render }) {
   const hasTransitionedIn = useMountTransition(isOpen, 0);
   return (
     <>
-      <div className="flex w-full flex-col items-center rounded-md bg-stone-700 transition duration-200 hover:bg-stone-600 md:rounded-xl">
+      <div className="flex w-full max-w-[900px] flex-col items-center rounded-md bg-brand-green transition duration-200 hover:bg-brand-green-secondary md:rounded-xl">
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="flex w-full cursor-pointer items-center justify-between p-2 sm:p-6"

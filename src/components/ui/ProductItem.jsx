@@ -13,10 +13,17 @@ function ProductItem({ product }) {
       <div className="flex h-full w-full items-center justify-center rounded-t border-b border-stone-800 bg-grey-primary text-center font-fugaz text-2xl font-bold text-brand-green">
         {product.name}
       </div>
-      <img src={product.img} onClick={handleClick} className="cursor-zoom-in" />
+      <img
+        src={product.img}
+        onClick={handleClick}
+        className="cursor-zoom-in hover:opacity-80"
+      />
       {isModal && (
         <Modal onClose={handleClick}>
-          <img src={product.img} className="" />
+          <img
+            src={product.img}
+            className="max-w-[300px] xl:max-w-[600px] 4xl:max-w-[850px]"
+          />
         </Modal>
       )}
       <div className="flex flex-col justify-end gap-2 rounded-b border-t border-stone-800 bg-grey-primary p-2">

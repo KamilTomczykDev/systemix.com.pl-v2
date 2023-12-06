@@ -1,4 +1,4 @@
-import { FaBolt } from "react-icons/fa6";
+import { FaInfoCircle } from "react-icons/fa";
 
 import BodyText from "../ui/BodyText";
 import Section from "../ui/Section";
@@ -21,7 +21,7 @@ function NewArrivals() {
         <div className="flex flex-col items-center justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">
             <SectionTitle>
-              <FaBolt /> Baterie typu slim
+              <FaInfoCircle /> Baterie typu slim
             </SectionTitle>
             <BodyText>
               Czas na zmiany w zasilaniu drogowych lamp ostrzegawczych i
@@ -31,7 +31,7 @@ function NewArrivals() {
           </div>
 
           <img
-            className="border-brand-red-secondary w-[200px] rounded-full border-[15px] p-4 sm:w-[200px]"
+            className="w-[200px] rounded-full border-[15px] border-brand-red-secondary p-4 sm:w-[200px]"
             src={Image4R25}
           ></img>
         </div>
@@ -46,7 +46,7 @@ function NewArrivals() {
           wydajniejsze energetycznie. Technologia ich wytwarzania uwzględnia
           niskoemisyjność, troskę o ochronę planety i przyszłych pokoleń.
         </BodyText>
-        <h3 className="text-brand-red text-center text-3xl font-bold">
+        <h3 className="text-center text-3xl font-bold text-brand-red">
           Dostępne wersje baterii typu slim:
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-5">
