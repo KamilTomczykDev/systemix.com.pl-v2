@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        'medium' : '0 0 30px -15px rgba(0, 0, 0, 0.3)'
+        'medium' : '0 0 30px -15px rgba(0, 0, 0, 0.3)',
+        'large' : '0 0 60px -15px rgba(0, 0, 0, 0.3)',
       },
       backgroundImage: {
         'new-arrivals' : "url('../src/assets/img/new-arrivals.jpg')",
