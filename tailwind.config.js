@@ -5,6 +5,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        'medium' : '0 0 30px -15px rgba(0, 0, 0, 0.3)'
+      },
       backgroundImage: {
         'new-arrivals' : "url('../src/assets/img/new-arrivals.jpg')",
         'we-take-care' : `url("/src/assets/img/we-take-care.jpg")`,
