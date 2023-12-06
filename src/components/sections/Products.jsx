@@ -11,13 +11,18 @@ import { smallProducts } from "../../data/products";
 function Products() {
   return (
     <Section>
-      <div className="flex w-full max-w-[1300px] flex-col justify-start">
-        <SectionTitle>
-          <FaBolt />
-          Produkty
-        </SectionTitle>
-        <BodyText>Oferujemy szeroką gamę baterii cynkowo-powietrznych</BodyText>
-        <div className="flex flex-col gap-10 p-10">
+      <div className="flex w-full max-w-[1300px] flex-col justify-start gap-6 p-4">
+        <div>
+          <SectionTitle>
+            <FaBolt />
+            Produkty
+          </SectionTitle>
+          <BodyText>
+            Oferujemy szeroką gamę baterii cynkowo-powietrznych
+          </BodyText>
+        </div>
+
+        <div className="flex flex-col gap-5 md:gap-10">
           <ProductDropdown
             title="Baterie do urządzeń drogowych"
             render={smallProducts.map((product) => (

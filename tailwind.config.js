@@ -22,9 +22,11 @@ export default {
         "brand-red-secondary": "#ca2626",
         "grey-primary": "#f2f2f2",
         "grey-secondary": "#4b4b4b",
+        'backdrop-color': 'rgba(255, 255, 255, 0.1)'
       },
       screens: {
         "4xl": "2000px",
+        'xs': '400px',
       },
     },
   },

@@ -1,11 +1,11 @@
-import Image6SX6 from "../assets/img/6SX6.png";
-import Image6SX12 from "../assets/img/6SX12.png";
-import Image6SX18 from "../assets/img/6SX18.png";
-import Image6SX25 from "../assets/img/6SX25.png";
-import Image6SX50 from "../assets/img/6SX50.png";
-import Image6SX60 from "../assets/img/6SX60.png";
-import Image6SX120 from "../assets/img/6SX120.png";
-import Image6SX150 from "../assets/img/6SX150.png";
+import Image6SX6 from "../assets/img/text/6SX6.png";
+import Image6SX12 from "../assets/img/text/6SX12.png";
+import Image6SX18 from "../assets/img/text/6SX18.png";
+import Image6SX25 from "../assets/img/text/6SX25.png";
+import Image6SX50 from "../assets/img/text/6SX50.png";
+import Image6SX60 from "../assets/img/text/6SX60.png";
+import Image6SX120 from "../assets/img/text/6SX120.png";
+import Image6SX150 from "../assets/img/text/6SX150.png";
 
 export const slimProducts = [
   {
