@@ -5,6 +5,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      maxWidth: {
+        'main' : "1300px",
+        'secondary' : "1000px"
+
+      },
       boxShadow: {
         'medium' : '0 0 30px -15px rgba(0, 0, 0, 0.3)',
         'large' : '0 0 60px -15px rgba(0, 0, 0, 0.3)',

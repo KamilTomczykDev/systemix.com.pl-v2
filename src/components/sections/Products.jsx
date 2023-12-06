@@ -11,8 +11,8 @@ import { largeProducts, smallProducts } from "../../data/products";
 function Products() {
   return (
     <Section>
-      <div className="flex w-full max-w-[1300px] flex-col items-center justify-start gap-6 p-4">
-        <div className="flex flex-col items-center gap-4">
+      <div className="max-w-secondary flex w-full flex-col items-center justify-start gap-6 p-4">
+        <div className="flex flex-col gap-4 xs:items-center">
           <SectionTitle>
             <FaBolt /> <span className="mr-8">Produkty</span>
           </SectionTitle>

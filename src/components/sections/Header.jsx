@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="h-screen w-full">
       <img src={BgImage} className="h-full w-full object-cover" />
-      <div className="absolute left-[50%] top-[50%] w-full max-w-[1300px] translate-x-[-50%] translate-y-[-50%] ">
+      <div className="max-w-main absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] ">
         <div className="relative top-[60px] flex w-full max-w-[600px] justify-center sm:left-0 sm:top-[80px] sm:translate-x-0 sm:px-10">
           <div className="z-10 flex flex-col gap-3 p-5 sm:items-start sm:justify-center">
             <h1 className="text-3xl font-bold text-white md:text-4xl xl:text-6xl">
@@ -17,7 +17,7 @@ function Header() {
               Rozwijamy technologię cynkowo-powietrzną do zasilania urządzeń
               mobilnych
             </h2>
-            <button className="bg-brand-green hover:bg-brand-green-secondary rounded-md border-none px-6 py-2 text-white xl:px-8 xl:py-3 xl:text-xl">
+            <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
               Nowości
             </button>
           </div>

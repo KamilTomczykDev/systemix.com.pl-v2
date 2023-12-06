@@ -1,6 +1,6 @@
 function Section({ children }) {
   return (
-    <section className="flex w-full items-center justify-center py-[125px] xl:py-[200px]">
+    <section className="flex w-full items-center justify-center py-[90px] sm:py-[125px] xl:py-[200px]">
       {children}
     </section>
   );

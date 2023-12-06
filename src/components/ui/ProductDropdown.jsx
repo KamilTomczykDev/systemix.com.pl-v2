@@ -11,7 +11,7 @@ function ProductDropdown({ title, render }) {
       <div className="flex w-full max-w-[900px] flex-col items-center rounded-md bg-brand-green transition duration-200 hover:bg-brand-green-secondary md:rounded-xl">
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="flex w-full cursor-pointer items-center justify-between p-2 sm:p-6"
+          className="flex w-full cursor-pointer items-center justify-between p-3 sm:p-6"
         >
           <h3 className="text-sm font-semibold text-white sm:text-2xl">
             {title}

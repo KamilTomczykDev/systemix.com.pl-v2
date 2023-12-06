@@ -13,9 +13,12 @@
     @apply font-[Poppins];
   }
   li {
-    @apply text-grey-secondary cursor-pointer hover:text-stone-400;
+    @apply cursor-pointer text-grey-secondary hover:text-stone-400;
   }
   .newarrival-image {
     @apply w-[75%];
+  }
+  .mobile-li {
+    @apply border-b-[1px] py-2;
   }
 }
