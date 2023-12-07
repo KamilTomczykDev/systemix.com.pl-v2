@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 import Logo from "../../assets/img/systemix-logo.png";
 
@@ -16,14 +17,32 @@ function Navbar() {
           className="h-[50px] cursor-pointer hover:opacity-70 md:h-[70px]"
         />
         <ul className="hidden items-center gap-7 md:flex">
-          <li>Projekt UE</li>
-          <li>Nowości</li>
-          <li>Produkty</li>
-          <li>Firma</li>
           <li>
-            <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
-              Kontakt
-            </button>
+            <Link to="project" smooth={true} duration={1000}>
+              Project UE
+            </Link>
+          </li>
+          <li>
+            <Link to="new-arrivals" smooth={true} duration={1000}>
+              Nowości
+            </Link>
+          </li>
+          <li>
+            <Link to="products" smooth={true} duration={1000}>
+              Produkty
+            </Link>
+          </li>
+          <li>
+            <Link to="company" smooth={true} duration={1000}>
+              Firma
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={1000}>
+              <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
+                Kontakt
+              </button>
+            </Link>
           </li>
         </ul>
         <div
@@ -38,11 +57,46 @@ function Navbar() {
             nav ? "left-[0]" : "left-[-120%]"
           } top-[60px] z-[15] flex h-screen w-screen flex-col p-10 text-3xl font-medium md:hidden`}
         >
-          <li className="mobile-li">Projekt UE</li>
-          <li className="mobile-li">Nowości</li>
-          <li className="mobile-li">Produkty</li>
-          <li className="mobile-li">Firma</li>
-          <li className="mobile-li">Kontakt</li>
+          <Link
+            to="project"
+            smooth={true}
+            onClick={handleClick}
+            duration={1000}
+          >
+            <li className="mobile-li">Projekt UE</li>
+          </Link>
+          <Link
+            to="new-arrivals"
+            onClick={handleClick}
+            smooth={true}
+            duration={1000}
+          >
+            <li className="mobile-li">Nowości</li>
+          </Link>
+          <Link
+            to="products"
+            smooth={true}
+            onClick={handleClick}
+            duration={1000}
+          >
+            <li className="mobile-li">Produkty</li>
+          </Link>
+          <Link
+            to="company"
+            onClick={handleClick}
+            smooth={true}
+            duration={1000}
+          >
+            <li className="mobile-li">Firma</li>
+          </Link>
+          <Link
+            to="contact"
+            onClick={handleClick}
+            smooth={true}
+            duration={1000}
+          >
+            <li className="mobile-li">Kontakt</li>
+          </Link>
         </ul>
       </div>
     </nav>

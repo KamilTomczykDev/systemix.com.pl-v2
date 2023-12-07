@@ -10,7 +10,7 @@ import { largeProducts, smallProducts } from "../../data/products";
 
 function Products() {
   return (
-    <Section>
+    <Section name="products">
       <div className="max-w-secondary flex w-full flex-col items-center justify-start gap-6 p-4">
         <div className="flex flex-col gap-4 xs:items-center">
           <SectionTitle>

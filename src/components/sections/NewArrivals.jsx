@@ -16,7 +16,7 @@ import Diagram2 from "../../assets/img/diagram-2.png";
 
 function NewArrivals() {
   return (
-    <Section>
+    <Section name='new-arrivals'>
       <div className="flex max-w-[1000px] flex-col items-center gap-6 px-4">
         <div className="flex flex-col items-center justify-between gap-8 sm:flex-row">
           <div className="flex flex-col gap-2">

@@ -1,4 +1,5 @@
 import Company from "./components/sections/Company";
+import Footer from "./components/sections/Footer";
 import Header from "./components/sections/Header";
 import Navbar from "./components/sections/Navbar";
 import NewArrivals from "./components/sections/NewArrivals";
@@ -17,6 +18,7 @@ function App() {
       <ImageHeading src={"bg-we-take-care"}>Dbamy o przyszłość</ImageHeading>
       <Products />
       <Company />
+      <Footer />
     </>
   );
 }

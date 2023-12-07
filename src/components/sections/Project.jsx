@@ -11,7 +11,7 @@ import { FaPencil } from "react-icons/fa6";
 
 function Project() {
   return (
-    <Section>
+    <Section name="project">
       <div className="max-w-secondary flex w-full flex-col justify-center gap-8 px-4 text-left sm:items-center sm:text-center">
         <SectionTitle>
           <FaPencil />
