@@ -3,8 +3,16 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 import Logo from "../../assets/img/systemix-logo.png";
+import useLanguages from "../hooks/useLanguages";
+import SelectLanguage from "../ui/SelectLanguage";
 
 function Navbar() {
+  const {
+    lang: {
+      nav: { project, newArrivals, products, company, contact },
+    },
+  } = useLanguages();
+
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
@@ -12,35 +20,38 @@ function Navbar() {
   return (
     <nav className="fixed z-20 flex h-[60px] w-full items-center justify-center border-b-[1px] bg-white md:h-[80px]">
       <div className="max-w-main flex w-full items-center justify-between px-5 text-lg">
-        <img
-          src={Logo}
-          className="h-[50px] cursor-pointer hover:opacity-70 md:h-[70px]"
-        />
+        <div className="flex items-center gap-4 xl:gap-10">
+          <img
+            src={Logo}
+            className="h-[50px] cursor-pointer hover:opacity-70 md:h-[70px]"
+          />
+          <SelectLanguage />
+        </div>
         <ul className="hidden items-center gap-7 md:flex">
           <li>
             <Link to="project" smooth={true} duration={1000}>
-              Project UE
+              {project}
             </Link>
           </li>
           <li>
             <Link to="new-arrivals" smooth={true} duration={1000}>
-              Nowości
+              {newArrivals}
             </Link>
           </li>
           <li>
             <Link to="products" smooth={true} duration={1000}>
-              Produkty
+              {products}
             </Link>
           </li>
           <li>
             <Link to="company" smooth={true} duration={1000}>
-              Firma
+              {company}
             </Link>
           </li>
           <li>
             <Link to="contact" smooth={true} duration={1000}>
               <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
-                Kontakt
+                {contact}
               </button>
             </Link>
           </li>
@@ -63,7 +74,7 @@ function Navbar() {
             onClick={handleClick}
             duration={1000}
           >
-            <li className="mobile-li">Projekt UE</li>
+            <li className="mobile-li">{project}</li>
           </Link>
           <Link
             to="new-arrivals"
@@ -71,7 +82,7 @@ function Navbar() {
             smooth={true}
             duration={1000}
           >
-            <li className="mobile-li">Nowości</li>
+            <li className="mobile-li">{newArrivals}</li>
           </Link>
           <Link
             to="products"
@@ -79,7 +90,7 @@ function Navbar() {
             onClick={handleClick}
             duration={1000}
           >
-            <li className="mobile-li">Produkty</li>
+            <li className="mobile-li">{products}</li>
           </Link>
           <Link
             to="company"
@@ -87,7 +98,7 @@ function Navbar() {
             smooth={true}
             duration={1000}
           >
-            <li className="mobile-li">Firma</li>
+            <li className="mobile-li">{company}</li>
           </Link>
           <Link
             to="contact"
@@ -95,7 +106,7 @@ function Navbar() {
             smooth={true}
             duration={1000}
           >
-            <li className="mobile-li">Kontakt</li>
+            <li className="mobile-li">{contact}</li>
           </Link>
         </ul>
       </div>

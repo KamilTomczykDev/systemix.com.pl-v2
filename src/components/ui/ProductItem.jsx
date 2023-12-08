@@ -1,7 +1,13 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import useLanguages from "../hooks/useLanguages";
 
 function ProductItem({ product }) {
+  const {
+    lang: {
+      products: { buttonFirst, buttonSecond },
+    },
+  } = useLanguages();
   const [isModal, setIsModal] = useState(false);
 
   function handleClick() {
@@ -28,10 +34,10 @@ function ProductItem({ product }) {
       )}
       <div className="flex flex-col justify-end gap-2 rounded-b border-t border-stone-800 bg-grey-primary p-2">
         <button className="rounded bg-brand-green py-1 text-[8px] text-white hover:bg-brand-green-secondary sm:text-[12px]">
-          Karta produktu
+          {buttonFirst}
         </button>
         <button className="rounded border-[1px] border-grey-secondary py-1 text-[8px] hover:bg-stone-200 sm:text-[12px]">
-          Karta bezpieczeństwa
+          {buttonSecond}
         </button>
       </div>
     </div>

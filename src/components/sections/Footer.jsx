@@ -1,7 +1,13 @@
 import { IoMdPin } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
+import useLanguages from "../hooks/useLanguages";
 
 function Footer() {
+  const {
+    lang: {
+      footer: { adress, contact, copyright },
+    },
+  } = useLanguages();
   return (
     <div
       name="contact"
@@ -11,7 +17,7 @@ function Footer() {
         <div className="flex flex-col">
           <h3 className="flex items-center text-xl font-semibold ">
             <IoMdPin />
-            Adres
+            {adress}
           </h3>
           <h4>SYSTEMIX sp. z o.o.</h4>
           <h4>ul. Lubichowska 176A</h4>
@@ -20,7 +26,7 @@ function Footer() {
         <div className="flex flex-col">
           <h3 className="flex items-center gap-2 text-xl font-semibold">
             <FaPhone size={20} />
-            Kontakt
+            {contact}
           </h3>
           <h4>+48 58/561 48 13</h4>
           <h4>+48 58/561 48 14</h4>
@@ -28,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex h-[80px] w-full items-center justify-center border-t-[1px] border-stone-600 bg-stone-900 p-4 text-center text-xs xs:text-sm">
-        Wszystkie prawa zastrzerzone @ Systemix sp. z o.o.
+        {copyright} Systemix sp. z o.o. ©2024
       </div>
     </div>
   );

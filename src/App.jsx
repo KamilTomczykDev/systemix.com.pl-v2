@@ -5,21 +5,20 @@ import Navbar from "./components/sections/Navbar";
 import NewArrivals from "./components/sections/NewArrivals";
 import Products from "./components/sections/Products";
 import Project from "./components/sections/Project";
-import ImageHeading from "./components/ui/ImageHeading";
+
+import { LanguageProvider } from "./components/contexts/LanguageContext";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
       <Header />
       <Project />
-      <ImageHeading src={"bg-new-arrivals"}>Nowości</ImageHeading>
       <NewArrivals />
-      <ImageHeading src={"bg-we-take-care"}>Dbamy o przyszłość</ImageHeading>
       <Products />
       <Company />
       <Footer />
-    </>
+    </LanguageProvider>
   );
 }
 
