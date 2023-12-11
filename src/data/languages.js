@@ -15,7 +15,7 @@ const polski = {
     title: "Projekt unijny",
     topBody:
       "Zakup współfinansowany ze środków Unii Europejsiej w ramach Europejskiego Funduszu Rozwoju Regionalnego.",
-    middleTitle: "Nr.umowy:",
+    middleTitle: "Nr.umowy: ",
     bottomTitle: "Tytuł projektu: ",
     bottomBody:
       '"Wdrożenie technologii produkcji nowej grupy produktowej - baterii przemysłowych cynkowo-powietrznych o elektrolicie alkalicznym."',

@@ -14,8 +14,7 @@ import { useEffect, useState } from "react";
 
 function Header() {
   const [slideNum, setSlideNum] = useState(0);
-  // const images = [bgImage, bgImage2, bgImage3, bgImage4];
-  // console.log(images);
+
   useEffect(
     function () {
       const timer = setInterval(function () {
@@ -38,6 +37,7 @@ function Header() {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
+
   return (
     <div ref={ref} className="h-screen w-full">
       <img
@@ -70,7 +70,7 @@ function Header() {
           slideNum === 4 ? "" : "opacity-0"
         } object-cover`}
       />
-      <div className="max-w-main absolute left-[50%] top-[50%] w-full translate-x-[-50%] translate-y-[-50%] ">
+      <div className="absolute left-[50%] top-[50%] w-full max-w-main translate-x-[-50%] translate-y-[-50%] ">
         <div className="relative top-[60px] flex w-full max-w-[600px] justify-center sm:left-0 sm:top-[80px] sm:translate-x-0 sm:px-10 xl:max-w-[700px]">
           <div
             className={`${
@@ -83,7 +83,7 @@ function Header() {
             <h2 className="max-w-[400px] text-white md:max-w-[500px] md:text-lg xl:text-xl">
               {side}
             </h2>
-            <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
+            <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
               {button}
             </button>
           </div>

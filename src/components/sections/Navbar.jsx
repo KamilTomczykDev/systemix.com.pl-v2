@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav className="fixed z-20 flex h-[60px] w-full items-center justify-center border-b-[1px] bg-white md:h-[80px]">
-      <div className="max-w-main flex w-full items-center justify-between px-5 text-lg">
+      <div className="flex w-full max-w-main items-center justify-between px-5 text-lg">
         <div className="flex items-center gap-4 xl:gap-10">
           <img
             src={Logo}
@@ -50,7 +50,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="contact" smooth={true} duration={1000}>
-              <button className="rounded-md border-none bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
+              <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
                 {contact}
               </button>
             </Link>
