@@ -18,8 +18,8 @@ function Navbar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="fixed z-20 flex h-[60px] w-full items-center justify-center border-b-[1px] bg-white md:h-[80px]">
-      <div className="flex w-full max-w-main items-center justify-between px-5 text-lg">
+    <div className="fixed z-20 flex h-[60px] w-full items-center justify-center border-b-[1px] bg-white md:h-[80px]">
+      <nav className="flex w-full max-w-main items-center justify-between px-5 text-lg">
         <div className="flex items-center gap-4 xl:gap-10">
           <img
             src={Logo}
@@ -28,27 +28,27 @@ function Navbar() {
           <SelectLanguage />
         </div>
         <ul className="hidden items-center gap-7 md:flex">
-          <li>
+          <li tabIndex="0">
             <Link to="project" smooth={true} duration={1000}>
               {project}
             </Link>
           </li>
           <li>
-            <Link to="new-arrivals" smooth={true} duration={1000}>
+            <Link to="new-arrivals" tabIndex="0" smooth={true} duration={1000}>
               {newArrivals}
             </Link>
           </li>
-          <li>
+          <li tabIndex="0">
             <Link to="products" smooth={true} duration={1000}>
               {products}
             </Link>
           </li>
-          <li>
+          <li tabIndex="0">
             <Link to="company" smooth={true} duration={1000}>
               {company}
             </Link>
           </li>
-          <li>
+          <li tabIndex="0">
             <Link to="contact" smooth={true} duration={1000}>
               <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary">
                 {contact}
@@ -109,8 +109,8 @@ function Navbar() {
             <li className="mobile-li">{contact}</li>
           </Link>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 

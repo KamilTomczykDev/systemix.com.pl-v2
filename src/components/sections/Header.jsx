@@ -78,10 +78,10 @@ function Header() {
               inView ? "" : "translate-y-10 opacity-0"
             } z-10 flex flex-col gap-3 p-5 transition delay-300 duration-1000 sm:items-start sm:justify-center`}
           >
-            <h1 className="text-3xl font-bold text-white md:text-4xl xl:text-6xl">
+            <h1 className="text-3xl font-bold tracking-wide text-white md:text-4xl xl:text-6xl">
               {main}
             </h1>
-            <h2 className="max-w-[400px] text-white md:max-w-[500px] md:text-lg xl:text-xl">
+            <h2 className="max-w-[400px] tracking-tight text-white md:max-w-[500px] md:text-lg xl:text-xl">
               {side}
             </h2>
             <Link to="new-arrivals" smooth={true} duration={1000}>
@@ -92,7 +92,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-[50%] w-[100%] max-w-[300px] translate-x-[-50%] grid-cols-2 items-center justify-center gap-5 xl:max-w-[400px]">
+      <div className="absolute bottom-0 left-[50%] w-[100%] max-w-[300px] translate-x-[-50%] grid-cols-2 xl:max-w-[400px]">
         <img
           src={lang === "polski" ? euImagePl : euImageEng}
           className="w-full"
