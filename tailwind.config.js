@@ -15,7 +15,7 @@ export default {
         'large' : '0 0 60px -15px rgba(0, 0, 0, 0.3)',
       },
       backgroundImage: {
-        'new-arrivals' : "url('../src/assets/img/new-arrivals.jpg')",
+        'new-arrivals' : "url('/src/assets/img/new-arrivals.jpg')",
         'we-take-care' : `url("/src/assets/img/we-take-care.jpg")`,
       },
       fontFamily: {

@@ -1,34 +1,13 @@
-import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import useLanguages from "../hooks/useLanguages";
 import { lang } from "../ui/SelectLanguage";
 
-import bgImage from "../../assets/img/slider6.jpg";
-import bgImage2 from "../../assets/img/slider5.jpg";
-import bgImage3 from "../../assets/img/slider4.jpg";
-import bgImage4 from "../../assets/img/slider3.jpg";
-import bgImage5 from "../../assets/img/slider7.jpg";
-
 import euImagePl from "../../assets/img/eu-signs-header-pl.png";
 import euImageEng from "../../assets/img/eu-signs-header-eng.png";
 import { Link } from "react-scroll";
+import ImageSlider from "../ui/ImageSlider";
 
 function Header() {
-  const [slideNum, setSlideNum] = useState(0);
-
-  useEffect(
-    function () {
-      const timer = setInterval(function () {
-        if (slideNum < 4) setSlideNum(slideNum + 1);
-        if (slideNum === 4) setSlideNum(0);
-        console.log(slideNum);
-      }, 8000);
-
-      return () => clearInterval(timer);
-    },
-    [slideNum],
-  );
-
   const {
     lang: {
       header: { main, side, button },
@@ -41,36 +20,7 @@ function Header() {
 
   return (
     <div ref={ref} className="h-screen w-full">
-      <img
-        src={bgImage}
-        className={`absolute h-full w-full transition duration-[2000ms] ${
-          slideNum === 0 ? "" : "opacity-0"
-        } object-cover`}
-      />
-      <img
-        src={bgImage2}
-        className={`absolute h-full w-full transition duration-[2000ms] ${
-          slideNum === 1 ? "" : "opacity-0"
-        } object-cover`}
-      />
-      <img
-        src={bgImage3}
-        className={`absolute h-full w-full transition duration-[2000ms] ${
-          slideNum === 2 ? "" : "opacity-0"
-        } object-cover`}
-      />
-      <img
-        src={bgImage4}
-        className={`absolute h-full w-full transition duration-[2000ms] ${
-          slideNum === 3 ? "" : "opacity-0"
-        } object-cover`}
-      />
-      <img
-        src={bgImage5}
-        className={`absolute h-full w-full transition duration-[2000ms] ${
-          slideNum === 4 ? "" : "opacity-0"
-        } object-cover`}
-      />
+      <ImageSlider />
       <div className="absolute left-[50%] top-[50%] w-full max-w-main translate-x-[-50%] translate-y-[-50%] ">
         <div className="relative top-[60px] flex w-full max-w-[600px] justify-center sm:left-0 sm:top-[80px] sm:translate-x-0 sm:px-10 xl:max-w-[700px]">
           <div

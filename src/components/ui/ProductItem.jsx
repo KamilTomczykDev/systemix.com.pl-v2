@@ -32,21 +32,13 @@ function ProductItem({ product }) {
           />
         </Modal>
       )}
-      <div className="flex flex-col items-center justify-end gap-2 rounded-b border-t border-stone-800 bg-grey-primary p-2">
-        <a
-          className="w-full"
-          href={`/src/assets/pdf/${product.name}.pdf`}
-          download
-        >
+      <div className="flex flex-col items-center justify-between rounded-b border-t border-stone-800 bg-grey-primary p-2 sm:justify-end sm:gap-2">
+        <a className="w-full" href={`/pdf/${product.name}.pdf`} download>
           <button className="w-full rounded bg-brand-green py-1 text-[8px] text-white hover:bg-brand-green-secondary sm:text-[12px]">
             {buttonFirst}
           </button>
         </a>
-        <a
-          className="w-full"
-          href={`/src/assets/pdf/${product.name}_safety.pdf`}
-          download
-        >
+        <a className="w-full" href={`/pdf/${product.name}_safety.pdf`} download>
           <button className="w-full rounded border-[1px] border-grey-secondary py-1 text-[8px] hover:bg-stone-200 sm:text-[12px]">
             {buttonSecond}
           </button>

@@ -56,6 +56,8 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+
+        {/* mobile nav-bar */}
         <div
           className="z-20 cursor-pointer text-grey-secondary md:hidden"
           onClick={handleClick}
@@ -63,6 +65,7 @@ function Navbar() {
           {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
         </div>
 
+        {/* mobile nav-menu */}
         <ul
           className={`absolute bg-white transition-all duration-500 ${
             nav ? "left-[0]" : "left-[-120%]"
