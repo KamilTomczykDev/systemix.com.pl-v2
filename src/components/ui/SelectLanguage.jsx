@@ -1,9 +1,10 @@
 import { deutsch, english, polski } from "../../data/languages";
 import useLanguages from "../hooks/useLanguages";
 
+export let lang = "polski";
+
 function SelectLanguage() {
   const { setLang } = useLanguages();
-  let lang = "polski";
 
   function handleChange(value) {
     lang = value;

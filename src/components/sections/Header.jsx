@@ -1,16 +1,17 @@
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import useLanguages from "../hooks/useLanguages";
+import { lang } from "../ui/SelectLanguage";
+
 import bgImage from "../../assets/img/slider6.jpg";
 import bgImage2 from "../../assets/img/slider5.jpg";
 import bgImage3 from "../../assets/img/slider4.jpg";
 import bgImage4 from "../../assets/img/slider3.jpg";
 import bgImage5 from "../../assets/img/slider7.jpg";
 
-import EuImage from "../../assets/img/znak-eu-white.png";
-import EuImage2 from "../../assets/img/znak-eu-white-2.png";
-import { useInView } from "react-intersection-observer";
-import useLanguages from "../hooks/useLanguages";
-import { useEffect, useState } from "react";
-// import { useState } from "react";
-// import LogoRP from "../assets/logoRP.png";
+import euImagePl from "../../assets/img/eu-signs-header-pl.png";
+import euImageEng from "../../assets/img/eu-signs-header-eng.png";
+import { Link } from "react-scroll";
 
 function Header() {
   const [slideNum, setSlideNum] = useState(0);
@@ -83,15 +84,20 @@ function Header() {
             <h2 className="max-w-[400px] text-white md:max-w-[500px] md:text-lg xl:text-xl">
               {side}
             </h2>
-            <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
-              {button}
-            </button>
+            <Link to="new-arrivals" smooth={true} duration={1000}>
+              <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
+                {button}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-[50%] grid w-[100%] max-w-[300px] translate-x-[-50%] grid-cols-2 items-center justify-center gap-5 xl:max-w-[400px]">
-        <img src={EuImage} className="w-full" />
-        <img src={EuImage2} className="w-full" />
+      <div className="absolute bottom-0 left-[50%] w-[100%] max-w-[300px] translate-x-[-50%] grid-cols-2 items-center justify-center gap-5 xl:max-w-[400px]">
+        <img
+          src={lang === "polski" ? euImagePl : euImageEng}
+          className="w-full"
+        />
+        {/* <img src={EuImage2} className="w-full" /> */}
         {/* <img src={LogoRP} className="w-full" /> */}
       </div>
     </div>
