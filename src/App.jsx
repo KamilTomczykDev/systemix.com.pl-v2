@@ -1,12 +1,14 @@
+import { LanguageProvider } from "./components/contexts/LanguageContext";
+import { lazy } from "react";
+
 import Company from "./components/sections/Company";
 import Footer from "./components/sections/Footer";
 import Header from "./components/sections/Header";
 import Navbar from "./components/sections/Navbar";
-import NewArrivals from "./components/sections/NewArrivals";
 import Products from "./components/sections/Products";
 import Project from "./components/sections/Project";
 
-import { LanguageProvider } from "./components/contexts/LanguageContext";
+const NewArrivals = lazy(() => import("./components/sections/NewArrivals"));
 
 function App() {
   return (
