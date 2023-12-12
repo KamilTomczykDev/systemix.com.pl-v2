@@ -13,7 +13,7 @@ function Footer() {
       name="contact"
       className="flex w-full flex-col items-center justify-between bg-stone-800 text-white"
     >
-      <div className="max-w-main mb-10 flex w-full flex-col gap-[75px] p-10 sm:flex-row sm:justify-center">
+      <div className="mb-10 flex w-full max-w-main flex-col gap-[75px] p-10 sm:flex-row sm:justify-center">
         <div className="flex flex-col">
           <h3 className="flex items-center text-xl font-semibold ">
             <IoMdPin />
@@ -21,7 +21,7 @@ function Footer() {
           </h3>
           <h4>SYSTEMIX sp. z o.o.</h4>
           <h4>ul. Lubichowska 176A</h4>
-          <h4>83-200</h4>
+          <h4>83-200 Starogard Gdański</h4>
         </div>
         <div className="flex flex-col">
           <h3 className="flex items-center gap-2 text-xl font-semibold">
