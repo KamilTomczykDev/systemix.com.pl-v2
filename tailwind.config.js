@@ -22,7 +22,7 @@ export default {
         'fugaz': 'Fugaz One, sans-serif',
       },
       gridTemplateRows: {
-        'product': "40px 2fr 1fr",
+        'product': "40px 3fr 2fr",
       },
       colors: {
         "brand-green": "#044424",
