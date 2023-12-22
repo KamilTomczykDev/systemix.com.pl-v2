@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Modal from "./Modal";
 import useLanguages from "../hooks/useLanguages";
+import { lang } from "./SelectLanguage";
+import Modal from "./Modal";
 
 function ProductItem({ product }) {
   const {
@@ -8,7 +9,11 @@ function ProductItem({ product }) {
       products: { buttonFirst, buttonSecond },
     },
   } = useLanguages();
+
   const [isModal, setIsModal] = useState(false);
+  const safetySheetSource = `/pdf/${product.name}_safety${
+    (lang === "deutsch" && product.name[0]) === "6" ? "_de" : ""
+  }.pdf`;
 
   function handleClick() {
     setIsModal(!isModal);
@@ -40,11 +45,7 @@ function ProductItem({ product }) {
             {buttonFirst}
           </button>
         </a>
-        <a
-          className="flex w-full"
-          href={`/pdf/${product.name}_safety.pdf`}
-          download
-        >
+        <a className="flex w-full" href={safetySheetSource} download>
           <button className="w-full rounded border-[1px] border-grey-secondary py-1 text-[8px] hover:bg-stone-200 sm:text-[12px]">
             {buttonSecond}
           </button>
