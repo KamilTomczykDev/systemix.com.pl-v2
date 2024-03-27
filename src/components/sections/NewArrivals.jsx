@@ -48,12 +48,14 @@ function NewArrivals() {
 
             <img
               className="w-[200px] rounded-full border-[15px] border-brand-red-secondary p-4 sm:w-[200px]"
+              alt="Crossed 4R25 battery"
               src={Image4R25}
             ></img>
           </div>
           {/* <img className="w-[300px]" src={Image6SX12}></img> */}
           <img
             className="newarrival-image mt-10"
+            alt="Folder picture"
             src={
               lang === "polski"
                 ? folder1
@@ -63,6 +65,7 @@ function NewArrivals() {
             }
           ></img>
           <img
+            alt="Folder picture"
             src={
               lang === "polski"
                 ? diagram
@@ -74,6 +77,7 @@ function NewArrivals() {
           />
           <img
             className="newarrival-image"
+            alt="Folder image"
             src={
               lang === "polski"
                 ? folder2
@@ -83,6 +87,7 @@ function NewArrivals() {
             }
           ></img>
           <img
+          alt="Diagram"
             src={
               lang === "polski"
                 ? diagram2
@@ -93,6 +98,7 @@ function NewArrivals() {
             className="newarrival-image"
           />
           <img
+          alt="Diagram"
             className="newarrival-image"
             src={
               lang === "polski"

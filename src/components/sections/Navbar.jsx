@@ -23,6 +23,7 @@ function Navbar() {
         <div className="flex items-center gap-4 xl:gap-10">
           <a href="https://systemix.com.pl">
             <img
+            alt="Logo"
               src={Logo}
               className="h-[50px] cursor-pointer hover:opacity-70 lg:h-[70px]"
             />

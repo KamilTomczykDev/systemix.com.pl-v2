@@ -25,6 +25,7 @@ function Project() {
         <div className="w-full max-w-[600px]  xl:w-[50%]">
           <img
             src={lang === "polski" ? euSignsPl : euSignsEng}
+            alt="UE symbols"
             className="w-full"
           />
         </div>

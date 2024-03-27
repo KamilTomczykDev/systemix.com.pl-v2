@@ -34,7 +34,7 @@ function Company() {
         </div>
 
         <div className="flex grid-cols-2 flex-col items-center gap-5 sm:grid sm:gap-10">
-          <img src={companyImg} className="w-full rounded-2xl sm:w-[400px]" />
+          <img src={companyImg} alt="Systemix's Headquarters" className="w-full rounded-2xl sm:w-[400px]" />
 
           <span className="text-md max-w-[400px] tracking-tight text-stone-800 xs:text-center xs:text-lg md:text-left md:text-2xl md:font-semibold">
             {middleBodyFirst}
@@ -44,14 +44,14 @@ function Company() {
           <span className="text-md max-w-[400px] tracking-tight text-stone-800 xs:text-center xs:text-lg md:text-left md:text-2xl md:font-semibold">
             {middleBodySecond}
           </span>
-          <img src={companyImg2} className="w-full rounded-2xl sm:w-[400px]" />
+          <img src={companyImg2} alt="Systemix's Headquarters" className="w-full rounded-2xl sm:w-[400px]" />
         </div>
         <p className="max-w-[1000px] text-xl font-semibold tracking-wide text-grey-secondary  xs:text-3xl">
           {bottomBody}
         </p>
         <div className="flex grid-cols-2 flex-col items-center gap-5 sm:grid sm:gap-10">
-          <img src={companyImg3} className="w-full rounded-2xl sm:w-[400px]" />
-          <img src={companyImg4} className="w-full rounded-2xl sm:w-[400px]" />
+          <img src={companyImg3} alt="Headquaters interior" className="w-full rounded-2xl sm:w-[400px]" />
+          <img src={companyImg4} alt="Headquaters interior" className="w-full rounded-2xl sm:w-[400px]" />
         </div>
       </div>
     </Section>

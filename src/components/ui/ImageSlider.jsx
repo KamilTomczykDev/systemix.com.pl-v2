@@ -25,29 +25,34 @@ function ImageSlider() {
     <>
       <img
         src={bgImage}
+        alt="Header image"
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 0 ? "" : "opacity-0"
         } object-cover`}
       />
       <img
         src={bgImage2}
+        alt="Header image"
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 1 ? "" : "opacity-0"
         } object-cover`}
       />
       <img
+        alt="Header image"
         src={bgImage3}
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 2 ? "" : "opacity-0"
         } object-cover`}
       />
       <img
+        alt="Header image"
         src={bgImage4}
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 3 ? "" : "opacity-0"
         } object-cover`}
       />
       <img
+        alt="Header image"
         src={bgImage5}
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 4 ? "" : "opacity-0"

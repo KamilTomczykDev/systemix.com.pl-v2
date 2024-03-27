@@ -27,6 +27,7 @@ function ProductItem({ product }) {
       <div className="flex items-center justify-center">
         <img
           src={product.img}
+          alt="Battery"
           onClick={handleClick}
           className="h-full cursor-zoom-in hover:opacity-80"
         />
@@ -36,6 +37,7 @@ function ProductItem({ product }) {
           <img
             src={product.img}
             className="max-w-[300px] xl:max-w-[600px] 4xl:max-w-[850px]"
+            alt="Battery"
           />
         </Modal>
       )}

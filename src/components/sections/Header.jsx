@@ -44,6 +44,7 @@ function Header() {
       </div>
       <div className="absolute bottom-0 left-[50%] w-[100%] max-w-[300px] translate-x-[-50%] grid-cols-2 xl:max-w-[400px]">
         <img
+        alt="UE symbols"
           src={lang === "polski" ? euImagePl : euImageEng}
           className="w-full"
         />
