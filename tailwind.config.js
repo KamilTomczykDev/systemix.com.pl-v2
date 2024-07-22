@@ -15,6 +15,9 @@ export default {
         'large' : '0 0 60px -15px rgba(0, 0, 0, 0.3)',
       },
       backgroundImage: {
+        'stationaries' : "url('/src/assets/img/stationaries-header.png')",
+        'company-heading' : "url('/src/assets/img/company-heading.jpg')",
+        'mobiles' : "url('/src/assets/img/mobiles-header.png')",
         'new-arrivals' : "url('/src/assets/img/new-arrivals.jpg')",
         'we-take-care' : `url("/src/assets/img/we-take-care.jpg")`,
       },

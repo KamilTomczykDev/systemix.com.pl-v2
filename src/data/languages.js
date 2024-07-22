@@ -1,7 +1,6 @@
 const polski = {
   nav: {
-    project: "Projekt UE",
-    newArrivals: "Nowości",
+    home: "Strona Główna",
     products: "Produkty",
     company: "Firma",
     contact: "Kontakt",
@@ -59,8 +58,7 @@ const polski = {
 
 const english = {
   nav: {
-    project: "EU Project",
-    newArrivals: "New arrivals",
+    home: "Home",
     products: "Products",
     company: "Company",
     contact: "Contact",
@@ -116,15 +114,14 @@ const english = {
 
 const deutsch = {
   nav: {
-    project: "EU Projekte",
-    newArrivals: "Neuheiten",
+    home: "Heim",
     products: "Produkte",
     company: "Unternehmen",
     contact: "Kontakt",
   },
   header: {
     main: "Wir investieren in Entarbonisierung",
-    side: "Entwicklung der Zink- Luft- Technologie zur Stromversorgung mobiler Geräte",
+    side: "Entwicklung der Zink-Luft-Technologie zur Stromversorgung mobiler Geräte",
     button: "Neuheiten",
   },
   project: {

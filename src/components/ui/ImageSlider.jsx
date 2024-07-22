@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-import bgImage from "../../assets/img/slider6.jpg";
-import bgImage2 from "../../assets/img/slider5.jpg";
-import bgImage3 from "../../assets/img/slider4.jpg";
-import bgImage4 from "../../assets/img/slider3.jpg";
-import bgImage5 from "../../assets/img/slider7.jpg";
+import bgImage from "../../assets/img/slider1.png";
+import bgImage2 from "../../assets/img/slider2.png";
+// import bgImage3 from "../../assets/img/slider4.jpg";
+// import bgImage4 from "../../assets/img/slider3.jpg";
+// import bgImage5 from "../../assets/img/slider7.jpg";
 
 function ImageSlider() {
   const [slideNum, setSlideNum] = useState(0);
@@ -12,8 +12,8 @@ function ImageSlider() {
   useEffect(
     function () {
       const timer = setInterval(function () {
-        if (slideNum < 4) setSlideNum(slideNum + 1);
-        if (slideNum === 4) setSlideNum(0);
+        if (slideNum < 1) setSlideNum(slideNum + 1);
+        if (slideNum === 1) setSlideNum(0);
       }, 8000);
 
       return () => clearInterval(timer);
@@ -37,7 +37,7 @@ function ImageSlider() {
           slideNum === 1 ? "" : "opacity-0"
         } object-cover`}
       />
-      <img
+      {/* <img
         alt="Header image"
         src={bgImage3}
         className={`absolute h-full w-full transition duration-[2000ms] ${
@@ -57,7 +57,7 @@ function ImageSlider() {
         className={`absolute h-full w-full transition duration-[2000ms] ${
           slideNum === 4 ? "" : "opacity-0"
         } object-cover`}
-      />
+      /> */}
     </>
   );
 }
