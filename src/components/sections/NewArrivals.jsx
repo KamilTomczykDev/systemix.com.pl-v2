@@ -64,12 +64,16 @@ function NewArrivals() {
               najnowocześniejsze i najbardziej wydajne produkty
             </BodyText>
           </div>
-          <div className="flex w-full max-w-main flex-col justify-between gap-10 px-4 lg:flex-row">
-            <Product title={"Baterie typu slim"} src={Slim} to="slim"></Product>
+          <div className="flex w-full max-w-main flex-col justify-between gap-10 xl:flex-row">
+            <Product
+              title={"Baterie typu slim"}
+              src={Slim}
+              to="baterie-typu-slim"
+            ></Product>
             <Product
               title={"Przenośne magazyny energii"}
               src={Mobile}
-              to="przenośne-magazyny-energii"
+              to="przenosne-magazyny-energii"
             ></Product>
             <Product
               title={"Stacjonarne magazyny energii"}

@@ -25,6 +25,7 @@ import diagram2 from "../../assets/img/diagram-2.png";
 import diagramEng2 from "../../assets/img/diagram-2-en.png";
 import diagramDe2 from "../../assets/img/diagram-2-de.png";
 import Footer from "../sections/Footer";
+import PageContainer from "../ui/PageContainer";
 
 function Slim() {
   const {
@@ -34,7 +35,7 @@ function Slim() {
   } = useLanguages();
 
   return (
-    <>
+    <PageContainer>
       <Section name="new-arrivals">
         <div className="flex max-w-[1000px] flex-col items-center gap-6 px-4">
           <h2 className="text-xl font-semibold leading-[25px] tracking-wide  text-stone-800 xs:text-center sm:max-w-[600px] sm:text-5xl sm:leading-[55px] xl:max-w-[1000px] xl:text-6xl xl:leading-[70px]">
@@ -123,7 +124,7 @@ function Slim() {
         </div>
       </Section>
       <Footer />
-    </>
+    </PageContainer>
   );
 }
 

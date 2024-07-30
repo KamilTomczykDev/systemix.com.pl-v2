@@ -9,6 +9,7 @@ import companyImg4 from "../../assets/img/company-pic-4.png";
 import Section from "../ui/Section";
 import Footer from "../sections/Footer";
 import ImageHeading from "../ui/ImageHeading";
+import PageContainer from "../ui/PageContainer";
 
 function Company() {
   const {
@@ -23,7 +24,7 @@ function Company() {
     },
   } = useLanguages();
   return (
-    <>
+    <PageContainer>
       <Section name="company">
         <div className="flex flex-col items-center gap-10">
           <ImageHeading src="bg-company-heading">
@@ -80,7 +81,7 @@ function Company() {
         </div>
       </Section>
       <Footer />
-    </>
+    </PageContainer>
   );
 }
 

@@ -4,13 +4,13 @@ import { lang } from "../ui/SelectLanguage";
 
 import euImagePl from "../../assets/img/eu-signs-header-pl.png";
 import euImageEng from "../../assets/img/eu-signs-header-eng.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import ImageSlider from "../ui/ImageSlider";
 
 function Header() {
   const {
     lang: {
-      header: { main, side, button },
+      header: { main, side },
     },
   } = useLanguages();
 
@@ -34,11 +34,18 @@ function Header() {
             <h2 className="max-w-[400px] tracking-tight text-white md:max-w-[500px] md:text-lg xl:text-xl">
               {side}
             </h2>
-            <Link to="new-arrivals" smooth={true} duration={1000}>
-              <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
-                {button}
-              </button>
-            </Link>
+            <div className="flex gap-2">
+              <Link to="/produkty">
+                <button className="rounded-md border-2 border-green-700 bg-brand-green px-6 py-2 text-white transition hover:bg-brand-green-secondary xl:px-8 xl:py-3 xl:text-xl">
+                  Produkty
+                </button>
+              </Link>
+              <Link to="/kontakt">
+                <button className="border-white-700 rounded-md border-2  px-6 py-2 text-white transition hover:bg-white hover:text-brand-green  xl:px-8 xl:py-3 xl:text-xl">
+                  Kontakt
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

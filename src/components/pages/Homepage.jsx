@@ -1,8 +1,9 @@
 import Footer from "../sections/Footer";
 import Header from "../sections/Header";
-import Products from "./Products";
 import Project from "../sections/Project";
 import NewArrivals from "../sections/NewArrivals";
+import ContactCta from "../sections/ContactCta";
+import CompanyCta from "../sections/CompanyCta";
 
 function Homepage() {
   return (
@@ -10,7 +11,8 @@ function Homepage() {
       <Header />
       <Project />
       <NewArrivals />
-      <Products />
+      <CompanyCta />
+      <ContactCta />
       <Footer />
     </>
   );

@@ -9,6 +9,8 @@ import Mobiles from "./components/pages/Mobiles";
 import Stationaries from "./components/pages/Stationaries";
 import Company from "./components/pages/Company";
 import Products from "./components/pages/Products";
+import ZincAir from "./components/pages/ZincAir";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -18,14 +20,16 @@ function App() {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Homepage />} />
-            <Route path="slim" element={<Slim />} />
-            <Route path="przenośne-magazyny-energii" element={<Mobiles />} />
+            <Route path="baterie-typu-slim" element={<Slim />} />
+            <Route path="przenosne-magazyny-energii" element={<Mobiles />} />
             <Route
               path="stacjonarne-magazyny-energii"
               element={<Stationaries />}
             />
             <Route path="Firma" element={<Company />} />
             <Route path="produkty" element={<Products />} />
+            <Route path="baterie-cynkowo-powietrzne" element={<ZincAir />} />
+            <Route path="kontakt" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>

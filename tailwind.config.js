@@ -29,7 +29,7 @@ export default {
       },
       colors: {
         "brand-green": "#044424",
-        "brand-green-secondary": "#1a5438",
+        "brand-green-secondary": "#088747",
         "brand-red": "#c00d0e",
         "brand-red-secondary": "#ca2626",
         "grey-primary": "#f2f2f2",

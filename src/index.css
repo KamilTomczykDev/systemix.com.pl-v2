@@ -21,4 +21,10 @@
   .mobile-li {
     @apply border-b-[1px] py-2;
   }
+  .mobile-li-s {
+    @apply ml-4 flex items-center gap-2 py-1 text-sm;
+  }
+  .dropdown-item {
+    @apply flex items-center gap-2 border-b-[1px] py-2 pl-2 pr-4 last:border-0;
+  }
 }

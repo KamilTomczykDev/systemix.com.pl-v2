@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div
       name="contact"
-      className="flex w-full flex-col items-center justify-between bg-stone-800 text-white"
+      className=" flex w-full flex-col items-center justify-between bg-stone-800 text-white"
     >
       <div className="mb-10 flex w-full max-w-main flex-col gap-[75px] p-10 sm:flex-row sm:justify-center">
         <div className="flex flex-col">
